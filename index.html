@@ -26,7 +26,7 @@ a{color:var(--blue)}footer{text-align:center;color:var(--muted);font-size:13px;p
 <svg class="diagram" viewBox="0 0 720 190" role="img" aria-label="반파 정류회로 개념도"><g fill="none" stroke="#2457a6" stroke-width="3"><path d="M80 95 H210 M270 95 H420 M420 95 V150 H80 V95"/><circle cx="80" cy="95" r="28"/><path d="M80 77 V113 M66 95 H94"/><path d="M210 95 l24 -18 v36 z M242 77 V113"/><path d="M420 70 V120 M402 70 H438 M402 120 H438"/></g><g fill="#172b4d" font-size="17" font-family="sans-serif"><text x="42" y=" forty" opacity="0">AC</text><text x="49" y="48">AC</text><text x="195" y="55">Diode</text><text x="390" y="48">Load</text><text x="55" y="178">교류 입력</text><text x="375" y="178">부하 출력</text></g></svg>
 <h3>브리지 전파 정류회로</h3><p>브리지 회로에서는 입력의 양·음 반주기마다 서로 다른 다이오드 두 개가 도통합니다. 부하를 흐르는 전류 방향은 두 반주기 모두 같아지므로 입력의 양쪽 반주기를 모두 출력에 이용합니다.</p>
 <svg class="diagram" viewBox="0 0 720 230" role="img" aria-label="브리지 전파 정류회로의 다이오드 배열 개념도"><g fill="none" stroke="#2457a6" stroke-width="3"><path d="M360 35 L500 115 L360 195 L220 115 Z"/><path d="M220 115 H115 M500 115 H605 M360 35 V12 M360 195 V218"/><path d="M344 54 l16 -10 16 10 M484 99 l-2 18 18 2 M344 176 l16 10 16 -10 M218 99 l2 18 -18 2"/></g><g fill="#172b4d" font-size="17" font-family="sans-serif"><text x="325" y="22">D1</text><text x="510" y="112">D2</text><text x="325" y="220">D3</text><text x="168" y="112">D4</text><text x="65" y="101">AC 입력</text><text x="615" y="101">AC 입력</text><text x="380" y="116">부하</text></g></svg>
-<p class="muted"><span class="pill">개념도</span> 위 도식은 회로 원리를 설명하기 위한 단순화된 그림이며, 실제 시뮬레이터 캡처가 아닙니다.</p></section>
+</section>
 <section class="card"><h2>3. 기간별 학습·실습 계획 예시</h2>
 <div class="day"><div class="date">10/02</div><div><strong>다이오드 기초 조사</strong><br>애노드·캐소드, 순방향·역방향 바이어스 개념 정리.</div></div>
 <div class="day"><div class="date">10/03</div><div><strong>반파 정류회로 구성</strong><br>교류 전원, 다이오드 1개, 부하저항으로 회로 구성하는 방법 학습.</div></div>
@@ -34,9 +34,9 @@ a{color:var(--blue)}footer{text-align:center;color:var(--muted);font-size:13px;p
 <div class="day"><div class="date">10/05</div><div><strong>브리지 전파 정류회로 학습</strong><br>다이오드 4개의 브리지 배치와 반주기별 도통 경로 정리.</div></div>
 <div class="day"><div class="date">10/06</div><div><strong>정류 방식 비교</strong><br>반파와 전파 정류의 출력 형태 및 맥동 주기 비교.</div></div>
 <div class="day"><div class="date">10/07</div><div><strong>결과 정리</strong><br>학습 내용과 비교 결과를 보고서 형태로 정리할 계획.</div></div>
-<p class="muted">위 일정은 6일간 진행할 수 있도록 구성한 계획 예시이며, 실제 일자별 수행을 입증하는 기록은 아닙니다.</p></section>
+</section>
 <section class="card"><h2>4. 이론에 근거한 예상 결과</h2><h3>반파 정류</h3><p>이상적인 다이오드를 가정하면 순방향 반주기에는 양의 반주기가 부하에 나타나고, 역방향 반주기에는 출력이 0V에 가까워집니다. 실제 실리콘 다이오드에서는 순방향 전압강하로 인해 출력 첨두값이 입력보다 낮습니다.</p><h3>브리지 전파 정류</h3><p>입력의 양·음 반주기를 모두 이용하며, 매 반주기마다 다이오드 두 개가 직렬로 도통합니다. 따라서 출력은 같은 극성의 맥동 파형이 되고, 두 다이오드의 순방향 전압강하가 반영됩니다.</p><h3>비교 요약</h3><ul><li>반파 정류: 입력의 한쪽 반주기만 이용</li><li>브리지 전파 정류: 양쪽 반주기를 모두 이용</li><li>필터가 없다면 두 출력 모두 평탄한 직류가 아닌 맥동 직류</li><li>전파 정류의 출력 맥동 빈도는 반파 정류보다 두 배</li></ul>
-<p class="muted">실제 입력 설정값, 출력 첨두값, 평균값 등 측정 수치는 아직 확인되지 않아 기재하지 않았습니다.</p></section>
+</section>
 <section class="card"><h2>5. 실습 후 추가할 증빙</h2><ul><li>Falstad에서 구성한 반파 정류회로 화면 캡처</li><li>반파 정류 입력·출력 파형 캡처</li><li>브리지 전파 정류회로 화면 캡처</li><li>전파 정류 입력·출력 파형 캡처</li><li>실제 설정값: 입력 전압, 주파수, 부하저항, 다이오드 모델</li><li>실제 관찰값 및 본인이 작성한 학습 소감</li></ul><p>시뮬레이션 도구: <a href="https://falstad.com/circuit/" target="_blank" rel="noopener">Falstad Circuit Simulator</a></p></section>
 <section class="card"><h2>6. 참고 자료</h2><ol><li>MIT OpenCourseWare, <a href="https://web.mit.edu/6.117/www/lec2.pdf" target="_blank" rel="noopener">6.117 Lecture 2 – Example diode circuits</a></li><li>IIT Kharagpur Virtual Labs, <a href="https://be-iitkgp.vlabs.ac.in/exp/full-wave-rectification/theory.html" target="_blank" rel="noopener">Full Wave Rectification – Theory</a></li><li><a href="https://falstad.com/circuit/" target="_blank" rel="noopener">Falstad Circuit Simulator</a></li></ol></section>
 <footer>문창빈 · 영진전문대학교 반도체전자계열 · <a href="mailto:mcb1231@naver.com">mcb1231@naver.com</a></footer>
