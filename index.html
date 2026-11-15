@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="문창빈의 반도체전자계열 기초 전자회로 학습 포트폴리오">
+<title>문창빈 | 전자회로 기초 포트폴리오</title>
+<style>
+:root{--ink:#172b4d;--muted:#5b6b82;--line:#dce4ee;--bg:#f4f7fb;--blue:#2457a6;--pale:#eaf1fb}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Noto Sans KR","Malgun Gothic",sans-serif;line-height:1.72}
+.wrap{max-width:980px;margin:auto;padding:32px 22px 64px}.hero{background:#fff;border:1px solid var(--line);border-radius:22px;padding:42px;margin-bottom:20px}
+.kicker{color:var(--blue);font-size:13px;font-weight:800;letter-spacing:.12em}.hero h1{font-size:clamp(30px,5vw,48px);line-height:1.2;margin:12px 0}.lead{color:var(--muted);max-width:680px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}.tag{background:var(--pale);color:var(--blue);padding:6px 11px;border-radius:999px;font-size:13px;font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px;margin-bottom:16px}.card h2{font-size:20px;margin:0 0 14px}.card h3{font-size:16px;margin:18px 0 6px}.muted{color:var(--muted)}.profile{display:grid;grid-template-columns:110px 1fr;gap:8px;margin:0}.profile dt{font-weight:700;color:var(--muted)}.profile dd{margin:0}
+.notice{background:#fff8e8;border:1px solid #f0d7a5;border-radius:14px;padding:16px 18px;color:#704d12;margin:18px 0}.day{display:grid;grid-template-columns:70px 1fr;gap:14px;padding:12px 0;border-top:1px solid var(--line)}.date{font-weight:800;color:var(--blue)}
+.diagram{width:100%;height:auto;background:#fbfdff;border:1px solid var(--line);border-radius:12px;margin-top:8px}.pill{display:inline-block;background:#edf2f7;border-radius:8px;padding:2px 8px;font-size:12px;color:#42526b}
+a{color:var(--blue)}footer{text-align:center;color:var(--muted);font-size:13px;padding:20px}
+@media(max-width:650px){.wrap{padding:16px 12px 40px}.hero{padding:28px 22px}.grid{grid-template-columns:1fr}.card{padding:20px}.profile{grid-template-columns:88px 1fr}}
+</style></head>
+<body><main class="wrap">
+<header class="hero"><div class="kicker">PORTFOLIO · ELECTRONICS BASICS</div><h1>문창빈</h1><p class="lead">반도체전자계열 기초 전자회로 학습 포트폴리오입니다. 다이오드의 정류 동작을 주제로 반파 정류와 브리지 전파 정류의 회로 구성 및 출력 파형 원리를 정리했습니다.</p><div class="tags"><span class="tag">영진전문대학교</span><span class="tag">반도체전자계열</span><span class="tag">2학년</span><span class="tag">기초 수준</span></div></header>
+<section class="grid"><article class="card"><h2>프로필</h2><dl class="profile"><dt>이름</dt><dd>문창빈</dd><dt>학교</dt><dd>영진전문대학교</dd><dt>학과</dt><dd>반도체전자계열</dd><dt>학년</dt><dd>2학년</dd><dt>이메일</dt><dd><a href="mailto:mcb1231@naver.com">mcb1231@naver.com</a></dd></dl></article>
+<article class="card"><h2>프로젝트 개요</h2><dl class="profile"><dt>프로젝트</dt><dd>다이오드 정류회로 시뮬레이션 및 출력 파형 분석</dd><dt>유형</dt><dd>개인 프로젝트 · 전자회로 시뮬레이션 학습</dd><dt>기간</dt><dd>2026.10.02 ~ 2026.10.07</dd><dt>도구</dt><dd>Falstad Circuit Simulator (사용 예정 도구)</dd><dt>수준</dt><dd>기초</dd></dl></article></section>
+<div class="notice"><strong>자료의 정확성 안내</strong><br>이 페이지는 과제 포트폴리오 초안입니다. 실제 실습 수행 화면·측정 데이터가 제공되지 않았으므로, 날짜별 내용은 수행 계획 예시이며 결과는 회로 이론에 따른 예상 설명입니다. 실제로 수행하지 않은 작업이나 측정값을 수행 사실처럼 표시하지 않았습니다. 제출 전 실제 진행 여부와 캡처·측정값을 확인해 보완해야 합니다.</div>
+<section class="card"><h2>1. 전공 및 학습 목표</h2><p>반도체전자계열에서 전자부품과 전자회로의 기초 동작 원리를 익히는 것을 목표로 합니다. 본 프로젝트에서는 다이오드의 순방향·역방향 특성을 바탕으로 교류 입력이 정류회로를 통과할 때 출력 파형이 어떻게 달라지는지 이해합니다.</p><h3>세부 목표</h3><ul><li>다이오드의 애노드와 캐소드 및 순·역방향 바이어스 개념 이해</li><li>다이오드 1개를 이용한 반파 정류회로의 동작 설명</li><li>다이오드 4개를 이용한 브리지 전파 정류회로의 도통 경로 설명</li><li>두 회로의 출력 파형과 맥동 주기 비교</li></ul></section>
+<section class="card"><h2>2. 회로 구성 개념</h2><h3>반파 정류회로</h3><p>다이오드가 순방향 바이어스되는 반주기에는 부하에 전류가 흐르고, 역방향 바이어스되는 반주기에는 전류가 거의 흐르지 않습니다. 따라서 입력 교류의 한쪽 반주기만 출력에 나타납니다.</p>
+<svg class="diagram" viewBox="0 0 720 190" role="img" aria-label="반파 정류회로 개념도"><g fill="none" stroke="#2457a6" stroke-width="3"><path d="M80 95 H210 M270 95 H420 M420 95 V150 H80 V95"/><circle cx="80" cy="95" r="28"/><path d="M80 77 V113 M66 95 H94"/><path d="M210 95 l24 -18 v36 z M242 77 V113"/><path d="M420 70 V120 M402 70 H438 M402 120 H438"/></g><g fill="#172b4d" font-size="17" font-family="sans-serif"><text x="42" y=" forty" opacity="0">AC</text><text x="49" y="48">AC</text><text x="195" y="55">Diode</text><text x="390" y="48">Load</text><text x="55" y="178">교류 입력</text><text x="375" y="178">부하 출력</text></g></svg>
+<h3>브리지 전파 정류회로</h3><p>브리지 회로에서는 입력의 양·음 반주기마다 서로 다른 다이오드 두 개가 도통합니다. 부하를 흐르는 전류 방향은 두 반주기 모두 같아지므로 입력의 양쪽 반주기를 모두 출력에 이용합니다.</p>
+<svg class="diagram" viewBox="0 0 720 230" role="img" aria-label="브리지 전파 정류회로의 다이오드 배열 개념도"><g fill="none" stroke="#2457a6" stroke-width="3"><path d="M360 35 L500 115 L360 195 L220 115 Z"/><path d="M220 115 H115 M500 115 H605 M360 35 V12 M360 195 V218"/><path d="M344 54 l16 -10 16 10 M484 99 l-2 18 18 2 M344 176 l16 10 16 -10 M218 99 l2 18 -18 2"/></g><g fill="#172b4d" font-size="17" font-family="sans-serif"><text x="325" y="22">D1</text><text x="510" y="112">D2</text><text x="325" y="220">D3</text><text x="168" y="112">D4</text><text x="65" y="101">AC 입력</text><text x="615" y="101">AC 입력</text><text x="380" y="116">부하</text></g></svg>
+<p class="muted"><span class="pill">개념도</span> 위 도식은 회로 원리를 설명하기 위한 단순화된 그림이며, 실제 시뮬레이터 캡처가 아닙니다.</p></section>
+<section class="card"><h2>3. 기간별 학습·실습 계획 예시</h2>
+<div class="day"><div class="date">10/02</div><div><strong>다이오드 기초 조사</strong><br>애노드·캐소드, 순방향·역방향 바이어스 개념 정리.</div></div>
+<div class="day"><div class="date">10/03</div><div><strong>반파 정류회로 구성</strong><br>교류 전원, 다이오드 1개, 부하저항으로 회로 구성하는 방법 학습.</div></div>
+<div class="day"><div class="date">10/04</div><div><strong>반파 정류 파형 분석</strong><br>입력 파형과 출력 파형의 차이, 차단되는 반주기 확인 항목 정리.</div></div>
+<div class="day"><div class="date">10/05</div><div><strong>브리지 전파 정류회로 학습</strong><br>다이오드 4개의 브리지 배치와 반주기별 도통 경로 정리.</div></div>
+<div class="day"><div class="date">10/06</div><div><strong>정류 방식 비교</strong><br>반파와 전파 정류의 출력 형태 및 맥동 주기 비교.</div></div>
+<div class="day"><div class="date">10/07</div><div><strong>결과 정리</strong><br>학습 내용과 비교 결과를 보고서 형태로 정리할 계획.</div></div>
+<p class="muted">위 일정은 6일간 진행할 수 있도록 구성한 계획 예시이며, 실제 일자별 수행을 입증하는 기록은 아닙니다.</p></section>
+<section class="card"><h2>4. 이론에 근거한 예상 결과</h2><h3>반파 정류</h3><p>이상적인 다이오드를 가정하면 순방향 반주기에는 양의 반주기가 부하에 나타나고, 역방향 반주기에는 출력이 0V에 가까워집니다. 실제 실리콘 다이오드에서는 순방향 전압강하로 인해 출력 첨두값이 입력보다 낮습니다.</p><h3>브리지 전파 정류</h3><p>입력의 양·음 반주기를 모두 이용하며, 매 반주기마다 다이오드 두 개가 직렬로 도통합니다. 따라서 출력은 같은 극성의 맥동 파형이 되고, 두 다이오드의 순방향 전압강하가 반영됩니다.</p><h3>비교 요약</h3><ul><li>반파 정류: 입력의 한쪽 반주기만 이용</li><li>브리지 전파 정류: 양쪽 반주기를 모두 이용</li><li>필터가 없다면 두 출력 모두 평탄한 직류가 아닌 맥동 직류</li><li>전파 정류의 출력 맥동 빈도는 반파 정류보다 두 배</li></ul>
+<p class="muted">실제 입력 설정값, 출력 첨두값, 평균값 등 측정 수치는 아직 확인되지 않아 기재하지 않았습니다.</p></section>
+<section class="card"><h2>5. 실습 후 추가할 증빙</h2><ul><li>Falstad에서 구성한 반파 정류회로 화면 캡처</li><li>반파 정류 입력·출력 파형 캡처</li><li>브리지 전파 정류회로 화면 캡처</li><li>전파 정류 입력·출력 파형 캡처</li><li>실제 설정값: 입력 전압, 주파수, 부하저항, 다이오드 모델</li><li>실제 관찰값 및 본인이 작성한 학습 소감</li></ul><p>시뮬레이션 도구: <a href="https://falstad.com/circuit/" target="_blank" rel="noopener">Falstad Circuit Simulator</a></p></section>
+<section class="card"><h2>6. 참고 자료</h2><ol><li>MIT OpenCourseWare, <a href="https://web.mit.edu/6.117/www/lec2.pdf" target="_blank" rel="noopener">6.117 Lecture 2 – Example diode circuits</a></li><li>IIT Kharagpur Virtual Labs, <a href="https://be-iitkgp.vlabs.ac.in/exp/full-wave-rectification/theory.html" target="_blank" rel="noopener">Full Wave Rectification – Theory</a></li><li><a href="https://falstad.com/circuit/" target="_blank" rel="noopener">Falstad Circuit Simulator</a></li></ol></section>
+<footer>문창빈 · 영진전문대학교 반도체전자계열 · <a href="mailto:mcb1231@naver.com">mcb1231@naver.com</a></footer>
+</main></body></html>
